@@ -1,5 +1,5 @@
 name: MCP Server
-version: "2.0.0"
+version: "2.1.0"
 slug: mcp_server
 description: Python addon with Dockerfile
 startup: services
