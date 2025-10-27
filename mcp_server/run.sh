@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
-# Активираме virtual environment
+# Активираме виртуалната среда
 source /venv/bin/activate
 
-# Стартираме FastAPI като PID 1 (важно за s6-overlay)
-exec python3 /run.py
+echo "Starting MCP Server..."
+# Стартираме uvicorn директно – няма reloader, няма втори процес
+exec uvicorn main:app --host 0.0.0.0 --port 8000
