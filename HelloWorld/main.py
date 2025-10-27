@@ -1,7 +1,17 @@
+from fastapi import FastAPI
 import time
 
-print("MCP Server running with Dockerfile…")
+app = FastAPI()
 
-while True:
-    print("✅ MCP Server alive")
-    time.sleep(10)
+@app.get("/")
+def root():
+    return {"status": "MCP server running", "version": "1.0.0"}
+
+@app.get("/hello")
+def hello():
+    return {"message": "Hello from MCP Server!"}
+
+# Безкраен цикъл за демонстрация (може да го махнеш)
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
