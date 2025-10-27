@@ -1,11 +1,14 @@
-name: Hello Addon
-version: "1.0.0"
-slug: hello_addon
-description: Minimal working addon for Home Assistant
-startup: services
+name: MCP Server
+version: "1.1.0"
+slug: mcp_server
+description: Minimal Python addon for Home Assistant
+startup: application
 boot: auto
+init: false
 arch:
   - amd64
   - aarch64
 ingress: false
-host_network: false
+host_network: true
+options: {}
+schema: {}
