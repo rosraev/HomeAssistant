@@ -1,6 +1,6 @@
 {
   "name": "MCP Server",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "slug": "mcp_server",
   "description": "FastAPI server for HA",
   "arch": ["amd64", "aarch64"],
