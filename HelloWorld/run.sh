@@ -3,8 +3,14 @@ set -e
 
 echo "✅ MCP Server addon started!"
 
-# Инсталираме необходимите библиотеки (пример)
+# Създаваме virtual environment
+python3 -m venv /venv
+
+# Активираме venv
+. /venv/bin/activate
+
+# Инсталираме нужните библиотеки вътре в venv
 pip install --no-cache-dir fastapi uvicorn requests pydantic openai
 
-# Стартираме Python процеса като PID 1
-exec python3 /main.py
+# Стартираме Python процеса от venv като PID 1
+exec python /main.py
