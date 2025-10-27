@@ -1,16 +1,14 @@
 {
   "name": "MCP Server",
-  "version": "0.3.2",
+  "version": "0.3.4",
   "slug": "mcp_server",
-  "description": "FastAPI server for HA",
+  "description": "FastAPI server for Home Assistant",
   "arch": ["amd64", "aarch64"],
   "startup": "services",
   "boot": "auto",
   "ports": {
     "8000/tcp": 8000
   },
-  "ingress": false,
   "host_network": true,
-  "options": {},
-  "schema": {}
+  "ingress": false
 }
