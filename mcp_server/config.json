@@ -1,6 +1,6 @@
 {
   "name": "MCP Server",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "slug": "mcp_server",
   "description": "Примерен локален адон за MCP Server",
   "arch": ["amd64", "armv7", "armhf", "aarch64"],
