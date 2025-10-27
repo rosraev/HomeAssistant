@@ -1,10 +1,7 @@
-#!/usr/bin/with-contenv bashio
+#!/usr/bin/env bash
 set -e
 
-echo "✅ Hello Addon started successfully!"
+echo "✅ MCP Server addon started!"
 
-# Безкраен цикъл, за да не спира
-while true; do
-    echo "Hello from HA addon!"
-    sleep 10
-done
+# Стартираме Python директно от същата папка
+exec python3 ./main.py
