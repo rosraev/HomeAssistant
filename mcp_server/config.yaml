@@ -1,9 +1,13 @@
-name: Simple Python Addon
-version: "1.0.1"
-slug: simple_python_addon
-description: A minimal working Python addon
-startup: services
+name: MCP Server
+version: "1.1.0"
+slug: mcp_server
+description: Minimal Python addon for Home Assistant
+startup: application
 boot: auto
 arch:
   - amd64
   - aarch64
+ingress: false
+host_network: true
+options: {}
+schema: {}
