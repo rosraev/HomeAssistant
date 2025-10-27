@@ -1,11 +1,9 @@
 name: Simple Python Addon
-version: "1.0.0"
+version: "1.0.1"
 slug: simple_python_addon
-description: A minimal working Python addon for Home Assistant
+description: A minimal working Python addon
 startup: services
 boot: auto
 arch:
   - amd64
   - aarch64
-host_network: true
-ingress: false
