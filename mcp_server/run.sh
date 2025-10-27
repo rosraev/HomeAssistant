@@ -1,5 +1,7 @@
-#!/usr/bin/with-contenv bashio
+#!/usr/bin/env bash
 set -e
 
-bashio::log.info "Starting simple python addon"
-exec python3 /run.py
+echo "✅ MCP Server addon started!"
+
+# Стартираме Python скрипта
+exec python3 /data/addons/local/mcp_server/main.py
