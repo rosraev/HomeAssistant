@@ -1,8 +1,8 @@
 name: MCP Server
-version: "1.1.0"
+version: "2.0.0"
 slug: mcp_server
-description: Minimal Python addon for Home Assistant
-startup: application
+description: Python addon with Dockerfile
+startup: services
 boot: auto
 init: false
 arch:
