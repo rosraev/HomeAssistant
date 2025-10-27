@@ -1,0 +1,11 @@
+name: Hello Addon
+version: "1.0.0"
+slug: hello_addon
+description: Minimal working addon for Home Assistant
+startup: services
+boot: auto
+arch:
+  - amd64
+  - aarch64
+ingress: false
+host_network: false
