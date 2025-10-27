@@ -1,5 +1,4 @@
 import time
-import requests
 
 print("MCP Server is running. Press Ctrl+C to stop.")
 
