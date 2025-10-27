@@ -1,9 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/with-contenv bashio
 set -e
 
-# Активираме виртуалната среда
+# Активираме Python виртуалната среда
 source /venv/bin/activate
 
-echo "Starting MCP Server..."
-# Стартираме uvicorn директно – няма reloader, няма втори процес
-exec uvicorn main:app --host 0.0.0.0 --port 8000
+bashio::log.info "Starting MCP Server..."
+exec /venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000
