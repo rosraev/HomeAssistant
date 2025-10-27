@@ -2,11 +2,15 @@
   "name": "MCP Server",
   "version": "0.3.0",
   "slug": "mcp_server",
-  "description": "Примерен локален адон за MCP Server",
-  "arch": ["amd64", "armv7", "armhf", "aarch64"],
+  "description": "FastAPI server for HA",
+  "arch": ["amd64", "aarch64"],
   "startup": "services",
   "boot": "auto",
-  "map": [],
+  "ports": {
+    "8000/tcp": 8000
+  },
+  "ingress": false,
+  "host_network": true,
   "options": {},
   "schema": {}
 }
