@@ -1,8 +1,7 @@
 import time
 
-print("MCP Server is running. Press Ctrl+C to stop.")
+print("MCP Server running with Dockerfile…")
 
-# Безкраен цикъл, за да остане адона жив
 while True:
-    print("✅ MCP Server alive...")
+    print("✅ MCP Server alive")
     time.sleep(10)
